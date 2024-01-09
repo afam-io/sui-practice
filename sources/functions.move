@@ -1,15 +1,12 @@
-module practice::practice {
-    use std::string::String;
+module practice::functions {
+    use std::string::{Self, String};
     use sui::transfer;
-    use sui::tx_context::TxContext;
+    use sui::tx_context::{Self, TxContext};
+    use sui::object::{Self, UID};
     
-    Struct Dao {
-        id: u8
-        treasury: u128
-        membership: u128
-    }
-
-    public fun sum(x: u64, y: u64)): u64 {
+    struct`
+    
+    public fun sum(x: u64, y: u64): u64 {
         x + y
     }
 
