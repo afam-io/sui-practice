@@ -1,7 +1,7 @@
 
-module practice::homework5 {
+module practice::asserts {
 
-    struct Asset has drop {
+    public struct Asset has drop {
         value : u64,
         flag : u8
     }
@@ -15,7 +15,7 @@ module practice::homework5 {
 
 
     fun create(value : u64, flag : u8) : Asset {
-        Asset{value : value, flag : flag}
+        Asset{value, flag}
     }
 
 
